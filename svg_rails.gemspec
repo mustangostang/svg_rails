@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'svg_tag/version'
+require 'svg_rails/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "svg_tag"
-  spec.version       = SvgTag::VERSION
+  spec.name          = "svg_rails"
+  spec.version       = SvgRails::VERSION
   spec.authors       = ["Vlad Andersen"]
   spec.email         = ["vlad.andersen@gmail.com"]
-  spec.summary       = %q{Support for SVG embed tags.}
-  spec.description   = %q{The best way to use SVG images in Rails view helpers
+  spec.summary       = %q{Support for SVG in Rails.}
+  spec.description   = %q{Best practices to use SVG assets in Rails view helpers
                        is to wrap them in object/embed tags.}
   spec.homepage      = ""
   spec.license       = "MIT"
@@ -19,8 +19,13 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "rails", '~> 3.2', '>= 3'
+
+  spec.add_dependency 'sass', '> 0'
+
+  spec.add_runtime_dependency "rails", '> 4'
 
   spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "pry"
 end

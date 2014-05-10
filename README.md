@@ -1,12 +1,13 @@
-# SvgTag
+# SVG for Rails
 
-TODO: Write a gem description
+    = svg_image_tag "chanel.svg", "no-svg/chanel.png"
+    = svg_object_tag "chanel.svg"
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'svg_tag'
+    gem 'svg_rails'
 
 And then execute:
 
@@ -14,7 +15,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install svg_tag
+    $ gem install svg_rails
 
 ## Usage
 
@@ -22,7 +23,7 @@ TODO: Write usage instructions here
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/svg_tag/fork )
+1. Fork it ( http://github.com/<my-github-username>/svg_rails/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

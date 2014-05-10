@@ -1,0 +1,27 @@
+.logo {
+  background: image-url("chanel.svg") no-repeat top left;
+}
+
+.logo-basic {
+  background: svg("chanel.svg") no-repeat top left;
+}
+
+.logo-with-fallback {
+  background: svg("chanel.svg", "no-svg/chanel.png") no-repeat top left;
+}
+
+.logo-with-auto-fallback {
+  background: svg("chanel.svg", :auto) no-repeat top left;
+}
+
+.logo-inline {
+  background: svg_inline("chanel.svg") no-repeat top left;
+}
+
+.logo-with-fallback {
+  background: svg_inline("chanel.svg", "no-svg/chanel.png") no-repeat top left;
+}
+
+.logo-with-auto-fallback {
+  background: svg_inline("chanel.svg", :auto) no-repeat top left;
+}

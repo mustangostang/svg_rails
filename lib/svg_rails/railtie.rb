@@ -1,11 +1,11 @@
 require 'rails'
-require 'svg_tag/helper'
+require 'svg_rails/helper'
 
-module SvgTag
+module SvgRails
   class Railtie < Rails::Railtie
-    initializer "svg_tag.action_view" do
+    initializer "svg_rails.action_view" do
       ActiveSupport.on_load(:action_view) do
-        include SvgTag::Helper
+        include SvgRails::Helper
       end
     end
   end
