@@ -1,27 +1,23 @@
-.logo {
+.bg {
   background: image-url("chanel.svg") no-repeat top left;
 }
 
-.logo-basic {
+.bg-basic {
   background: svg("chanel.svg") no-repeat top left;
 }
 
-.logo-with-fallback {
-  background: svg("chanel.svg", "no-svg/chanel.png") no-repeat top left;
+.bg-with-absolute-fallback {
+  background: svg("chanel.svg", "/images/no-svg/chanel.png") no-repeat top left;
 }
 
-.logo-with-auto-fallback {
-  background: svg("chanel.svg", :auto) no-repeat top left;
+.bg-with-relative-fallback {
+  background: svg("chanel.svg", "chanel.png") no-repeat top left;
 }
 
-.logo-inline {
+.bg-inline {
   background: svg_inline("chanel.svg") no-repeat top left;
 }
 
-.logo-with-fallback {
+.bg-with-fallback {
   background: svg_inline("chanel.svg", "no-svg/chanel.png") no-repeat top left;
-}
-
-.logo-with-auto-fallback {
-  background: svg_inline("chanel.svg", :auto) no-repeat top left;
 }

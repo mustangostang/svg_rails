@@ -46,8 +46,9 @@ module SvgRails
     private
 
     def path_to_fallback_image(source, fallback)
-      if fallback.blank? && SvgRails.configuration.auto_find_assets
-        fallback = source.gsub('/\.svg$/', '.png')
+      return "" if fallback == :skip
+      if (fallback.blank? && SvgRails.configuration.auto_find_assets || fallback == :auto)
+        fallback = source.gsub(/.svg$/, '.png')
       end
       return "" if fallback.blank?
       return path_to_image(fallback) if fallback.to_s.starts_with?('/')

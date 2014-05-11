@@ -8,9 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = SvgRails::VERSION
   spec.authors       = ["Vlad Andersen"]
   spec.email         = ["vlad.andersen@gmail.com"]
-  spec.summary       = %q{Support for SVG in Rails.}
-  spec.description   = %q{Best practices to use SVG assets in Rails view helpers
-                       is to wrap them in object/embed tags.}
+  spec.summary       = %q{Use SVG in Rails.}
+  spec.description   = %q{Best practices to use SVG assets in Rails.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -21,7 +20,6 @@ Gem::Specification.new do |spec|
 
 
   spec.add_dependency 'sass', '> 0'
-
   spec.add_runtime_dependency "rails", '> 4'
 
   spec.add_development_dependency "bundler", "~> 1.5"
